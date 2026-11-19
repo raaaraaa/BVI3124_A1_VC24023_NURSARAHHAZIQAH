@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Portfolio</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Connect JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a class="logo" href="index.html">
+                My<span>Portfolio.</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" type="button">
+                Dark mode
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container page-main">
+
+        <section class="page-heading">
+            <p class="eyebrow">LET'S CONNECT</p>
+
+            <h1>
+                Contact <span class="pink-text">Me</span>
+            </h1>
+
+            <p>
+                Have a question or opportunity?
+                Feel free to send me a message using the form below.
+            </p>
+        </section>
+
+
+        <!-- Contact Information and Form -->
+        <section class="contact-layout">
+
+            <!-- Contact Information -->
+            <div class="contact-info info-card">
+
+                <h2>Contact Information</h2>
+
+                <p>
+                    You can contact me directly through email for internship opportunities, project collaborations, or general enquiries.
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:srhhzqh30@gmail.com">
+                        srhhzqh30@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Semenyih, Selangor / Pekan, Pahang
+                </p>
+
+                <p class="small-note">
+                    Feel free to contact me for any enquiries
+                    or opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" novalidate>
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter message subject"
+                >
+
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                ></textarea>
+
+
+                <button class="button" type="submit">
+                    Submit Message
+                </button>
+
+
+                <!-- Validation Message -->
+                <p id="formMessage" class="form-message"
+                   aria-live="polite"></p>
+
+                <p class="small-note">
+                    Please complete all fields before submitting.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span class="current-year"></span>
+                SARAHAZIQAH. All rights reserved.
+            </p>
+
+            <div>
+                <a href="mailto:srhhzqh30@gmail.com">srhhzqh30@gmail.com</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" type="button"
+            aria-label="Back to top">
+        ↑
+    </button>
+
+</body>
+</html>

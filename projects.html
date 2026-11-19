@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html">My<span>Portfolio.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-heading">
+      <p class="eyebrow">MY ACADEMIC WORK</p>
+      <h1>My <span class="pink-text">Projects</span></h1>
+      <p>Here are some of the projects I have worked on during my studies. These projects help me practise programming, electronics, automation and problem-solving.</p>
+    </section>
+
+    <section class="section">
+      <div class="filter-buttons" aria-label="Filter projects">
+        <button class="filter-btn selected" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="automation" type="button">Automation</button>
+        <button class="filter-btn" data-filter="iot" type="button">IoT</button>
+        <button class="filter-btn" data-filter="software" type="button">Software</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="iot automation">
+          <img class="project-photo" src="images/projects/smart-coop.jpg" alt="Chicken coop used for the Smart Chicken Coop project">
+          <div class="project-content">
+            <p class="project-type">EMBEDDED SYSTEMS · IoT</p>
+            <h2>Smart Chicken Coop System</h2>
+            <p>An automated chicken coop system using an ESP32, DHT22 temperature sensor and MQ-137 ammonia sensor. It controls a lamp and mist pump through relay modules to help manage coop conditions.</p>
+            <p class="project-contribution"><strong>My contribution:</strong> Embedded system programming and system integration, connecting the sensors, control outputs and monitoring functions.</p>
+            <p class="project-tools"><strong>Tools:</strong> ESP32, Arduino IDE, DHT22, MQ-137, relay, LCD, Wi-Fi and Google Sheets.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="iot software">
+          <img class="project-photo" src="images/projects/coop-dashboard.jpg" alt="Smart Chicken Coop monitoring dashboard interface">
+          <div class="project-content">
+            <p class="project-type">IoT · REAL-TIME MONITORING</p>
+            <h2>Smart Coop Monitoring Dashboard</h2>
+            <p>A monitoring interface for the Smart Chicken Coop system that displays real-time temperature, humidity, ammonia levels, and device status so poultry farm conditions can be tracked remotely.</p>
+            <p class="project-contribution"><strong>My contribution:</strong> Designed the dashboard layout, connected sensor data logs, and configured status indicators for automated coop control.</p>
+            <p class="project-tools"><strong>Tools:</strong> Google Sheets, Wi-Fi, ESP32 and Web Interface.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="software iot">
+          <img class="project-photo" src="images/projects/database.jpg" alt="Illustration of a database and data chart">
+          <div class="project-content">
+            <p class="project-type">DATABASE · DATA VISUALIZATION</p>
+            <h2>Sensor Monitoring Dashboard</h2>
+            <p>A dashboard project for storing and presenting sensor information. The database keeps sensor details and readings, while the dashboard helps users view the collected data.</p>
+            <p class="project-contribution"><strong>Project work:</strong> Created database tables and worked on connecting the data to a dashboard interface.</p>
+            <p class="project-tools"><strong>Tools:</strong> MySQL, Python, Streamlit and VS Code.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="software">
+          <img class="project-photo" src="images/projects/calculator.jpg" alt="Illustration of a calculator application">
+          <div class="project-content">
+            <p class="project-type">MOBILE APPLICATION</p>
+            <h2>Android Calculator App</h2>
+            <p>A basic mobile calculator application developed as part of an Android Studio laboratory task. The app provides a simple interface for performing calculations.</p>
+            <p class="project-contribution"><strong>Project work:</strong> Designed the app interface, implemented calculator functions and tested the application.</p>
+            <p class="project-tools"><strong>Tools:</strong> Android Studio.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span class="current-year"></span> SARAHAZIQAH. All rights reserved.</p>
+      <div><a href="mailto:srhhzqh30@gmail.com">srhhzqh30@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
